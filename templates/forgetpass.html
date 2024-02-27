@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../static/assets/css/foot.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="design">
+            <div class="pill-1 rotate-45"></div>
+            <div class="pill-2 rotate-45"></div>
+            <div class="pill-3 rotate-45"></div>
+            <div class="pill-4 rotate-45"></div>
+        </div>
+        <div class="login">
+            <h3 class="title">Password Reset!</h3>
+            <div class="text-center">
+                <p>To reset your password, enter the registered e-mail address and we will send you password reset instructions on your e-mail!</p>
+            </div>
+            <div class="text-input">
+                <i class="ri-mail-fill"></i>
+                <input type="password" placeholder="Registered Email">
+            </div>
+            <button class="login-btn" data-toggle="modal"
+            data-target="#myModal">RESET PASSWORD</button>
+            <div class="create">
+                <a href="login.html">Back</a>
+                <i class="ri-arrow-left-fill"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" style="display: none;" aria-modal="true">
+        <div class="modal-dialog">
+            <div class="card">
+                <div class="card-img"> <img class="img-fluid" src="./assets/img/hero/logo.png"> </div>
+                <div class="card-title">
+                    <p>Success!</p>
+                </div>
+                <div class="card-text">
+                    <p>Check your mail box! <br></p>
+                </div> 
+                <button class="btn">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,911 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>UWorkify » Student help | Homework Online</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/bootstrap.min.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/owl.carousel.min.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/slicknav.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/slicknav.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/flaticon.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/flaticon.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/progressbar_barfiller.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/progressbar_barfiller.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/gijgo.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/gijgo.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/animate.min.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/animate.min.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/animated-headline.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/animated-headline.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/magnific-popup.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome-all.min.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/fontawesome-all.min.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/themify-icons.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/themify-icons.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/slick.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/slick.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/nice-select.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/nice-select.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/style.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/style2.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/style2.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/foot.css') }}"> -->
+    <!-- <link rel="stylesheet" href="assets/css/hamburgers.min.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/hamburgers.min.css') }}">
+    <!-- <link rel="stylesheet" href="./assets/css/pricing.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./assets/css/pricing.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6pZl2p4uHQmG0M1N7Y9RvC84Z6R7N5Y5" crossorigin="anonymous">
+
+</head>
+
+
+
+<body>
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none">
+                                    <!-- Mobile Toggle Button -->
+                                    <button id="mobileMenuButton" class="navbar-toggler" type="button"
+                                        data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu"
+                                        aria-expanded="false" aria-label="Toggle navigation"
+                                        style="background-color: #7572FF;">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <!-- Mobile Navigation Menu -->
+                                    <div class="collapse navbar-collapse" id="mobileMenu">
+                                        <ul class="navbar-nav"
+                                            style="margin-top: revert;text-align: center;background-color: #7572FF;padding: 20px;">
+                                            <li class="nav-item active"><a class="nav-link" href="#"
+                                                    style="color: #fff;">Home</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#dk-footer"
+                                                    style="color: #fff;">About</a></li>
+                                            <li class="nav-item"><a class="nav-link"
+                                                    href="https://discord.gg/eRsp5CcU5r"
+                                                    style="color: #fff;">Discord</a></li>
+                                            <li class="nav-item"><a class="nav-link btn btn3" href="#Purchase"
+                                                    style="color: #fff;">Purchase</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <h2
+                                        style="width: max-content;color: white;font-weight: bolder;cursor: pointer;padding-top: 3px;">
+                                        UWorkify</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li class="active"><a href="#">Home</a></li>
+                                                <li><a href="#dk-footer">About</a></li>
+                                                <!-- Button -->
+                                                <li><a href="https://discord.gg/eRsp5CcU5r">Discord</a></li>
+                                                <li class="button-header"><a href="#Purchase"
+                                                        class="btn btn3">Purchase</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? slider Area Start-->
+        <section class="slider-area ">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-7 col-md-12">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Welcome to <br> UWorkify.com!
+                                    </h1>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">Ignite the potential of knowledge
+                                        with UWorkify.com!
+                                        Your premier destination for all your homework assistance needs!</p>
+                                    <a href="#unlock" class="btn hero-btn" data-animation="fadeInLeft"
+                                        data-delay="0.7s">Unlock Question & Answer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ? services-area -->
+        <section>
+
+
+            <div class="services-area">
+                <div class="container">
+                    <div class="row justify-content-sm-center">
+                        <div class="col-lg-4 col-md-6 col-sm-8">
+                            <div class="single-services mb-30">
+                                <div class="features-icon">
+                                    <!-- <img src="assets/img/icon/icon1.svg" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/icon/icon1.svg') }}" alt="">
+                                </div>
+                                <div class="features-caption">
+                                    <h3>1K+ Question ask</h3>
+                                    <p>UWorkify.com is your go-to solution for homework hurdles. We understand the
+                                        frustration of being stuck,
+                                        and we're here to provide expert assistance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-8">
+                            <div class="single-services mb-30">
+                                <div class="features-icon">
+                                    <!-- <img src="assets/img/icon/icon2.svg" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/icon/icon2.svg') }}" alt="">
+                                </div>
+                                <div class="features-caption">
+                                    <h3>With Expert Instructors</h3>
+                                    <p>UWorkify.com is the ultimate tool for studying smarter, all at zero cost!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-8">
+                            <div class="single-services mb-30">
+                                <div class="features-icon">
+                                    <!-- <img src="assets/img/icon/icon3.svg" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/icon/icon3.svg') }}" alt="">
+                                </div>
+                                <div class="features-caption">
+                                    <h3>Life time access</h3>
+                                    <p>Gain lifelong access to invaluable resources with UWorkify.com,
+                                        ensuring your learning journey is endless and limitless.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="courses-area section-padding40 fix">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div>
+                            <div class="section-tittle text-center mb-55">
+                                <h2>Our Premier Platforms Solution</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses-actives col-lg-3">
+                        <div id="slideshow">
+                            <div class="properties pb-20">
+                                <div class="properties__card">
+                                    <div class="properties__img overlay1">
+                                        <a href="#nxsearch"><img src="#" alt=""></a>
+                                    </div>
+                                    <div class="properties__caption">
+                                        <h3><a href="#">Chegg Answers</a></h3>
+                                        <img src="{{ url_for('static', filename='./img/logo/chegg.png') }}" alt="">
+                                        <div
+                                            class="properties__footer d-flex justify-content-between align-items-center">
+                                            <div class="restaurant-name">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <p><span>(4.5)</span> based on 120</p>
+                                            </div>
+                                        </div>
+                                        <a href="#Purchase" class="border-btn border-btn2">Buy</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="properties pb-20">
+                                <div class="properties__card">
+                                    <div class="properties__img overlay1">
+                                        <a href="#nxsearch"><img src="#" alt=""></a>
+                                    </div>
+                                    <div class="properties__caption">
+                                        <h3><a href="#">CourseHero Answers</a></h3>
+                                        <!-- <img src="./assets/img/logo/coursehero.png" alt=""> -->
+                                        <img src="{{ url_for('static', filename='./img/logo/coursehero.png') }}" alt="">
+                                        <div
+                                            class="properties__footer d-flex justify-content-between align-items-center">
+                                            <div class="restaurant-name">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <p><span>(4.5)</span> based on 120</p>
+                                            </div>
+                                        </div>
+                                        <a href="#Purchase" class="border-btn border-btn2">Buy</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="properties pb-20">
+                                <div class="properties__card">
+                                    <div class="properties__img overlay1">
+                                        <a href="#nxsearch"><img src="#" alt=""></a>
+                                    </div>
+                                    <div class="properties__caption">
+                                        <h3><a href="#">Numerade Answers</a></h3>
+                                        <img src="{{ url_for('static', filename='./img/logo/numerade.jpg') }}" alt="">
+                                        <div
+                                            class="properties__footer d-flex justify-content-between align-items-center">
+                                            <div class="restaurant-name">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <p><span>(4.5)</span> based on 120</p>
+                                            </div>
+                                        </div>
+                                        <a href="#unlock" class="border-btn border-btn2">Unlock Here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="properties pb-20">
+                                <div class="properties__card">
+                                    <div class="properties__img overlay1">
+                                        <a href="#"><img src="#" alt=""></a>
+                                    </div>
+                                    <div class="properties__caption">
+                                        <h3><a href="#">Scribd Answers</a></h3>
+                                        <!-- <img src="./assets/img/logo/scribd.png" alt=""> -->
+                                        <img src="{{ url_for('static', filename='./img/logo/scribd.png') }}" alt="">
+                                        <div
+                                            class="properties__footer d-flex justify-content-between align-items-center">
+                                            <div class="restaurant-name">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <p><span>(4.5)</span> based on 120</p>
+                                            </div>
+                                        </div>
+                                        <a href="#unlock" class="border-btn border-btn2">Unlock Here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="properties pb-20">
+                                <div class="properties__card">
+                                    <div class="properties__img overlay1">
+                                        <a href="#"><img src="#" alt=""></a>
+                                    </div>
+                                    <div class="properties__caption">
+                                        <h3><a href="#">Academia Answers</a></h3>
+                                        <!-- <img src="./assets/img/logo/Academia.png" alt=""> -->
+                                        <img src="{{ url_for('static', filename='./img/logo/Academia.png') }}" alt="">
+                                        <div
+                                            class="properties__footer d-flex justify-content-between align-items-center">
+                                            <div class="restaurant-name">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <p><span>(4.5)</span> based on 120</p>
+                                            </div>
+                                        </div>
+                                        <a href="#unlock" class="border-btn border-btn2">Unlock Here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="properties pb-20">
+                                <div class="properties__card">
+                                    <div class="properties__img overlay1">
+                                        <a href="#"><img src="#" alt=""></a>
+                                    </div>
+                                    <div class="properties__caption">
+                                        <h3><a href="#">SlideShare Answers</a></h3>
+                                        <!-- <img src="./assets/img/logo/slideshare.png" alt=""> -->
+                                        <img src="{{ url_for('static', filename='./img/logo/slideshare.png') }}" alt="">
+                                        <div
+                                            class="properties__footer d-flex justify-content-between align-items-center">
+                                            <div class="restaurant-name">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <p><span>(4.5)</span> based on 120</p>
+                                            </div>
+                                        </div>
+                                        <a href="#unlock" class="border-btn border-btn2">Unlock Here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="properties pb-20">
+                                <div class="properties__card">
+                                    <div class="properties__img overlay1">
+                                        <a href="#"><img src="#" alt=""></a>
+                                    </div>
+                                    <div class="properties__caption">
+                                        <h3><a href="#">FreePik Answers</a></h3>
+                                        <!-- <img src="./assets/img/logo/Freepik.png" alt=""> -->
+                                        <img src="{{ url_for('static', filename='./img/logo/Freepik.png') }}" alt="">
+                                        <div
+                                            class="properties__footer d-flex justify-content-between align-items-center">
+                                            <div class="restaurant-name">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <p><span>(4.5)</span> based on 120</p>
+                                            </div>
+                                        </div>
+                                        <a href="#unlock" class="border-btn border-btn2">Unlock Here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section oncontextmenu='return false' class='snippet-body' id="Purchase">
+            <div class="row justify-content-center">
+                <div>
+                    <div class="section-tittle text-center mb-55">
+                        <h2>Our Services Price</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="demo">
+                <div class="container c">
+                    <div class="row col-lg-12 justify-content-center">
+                        <div class="col-md-4 col-sm-6 shadow-lg bg-white rounded pt-4">
+                            <div class="pricingTable">
+                                <h3 class="title">Free</h3>
+                                <div class="price-value">$00.00
+                                    <span class="month"></span>
+                                </div>
+                                <ul class="pricing-content">
+                                    <li>Unlimited Unlocks</li>
+                                    <li>Limited Sites</li>
+                                    <li>Adds</li>
+                                    <li class="disable"><i class="fa fa-times"></i></li>
+                                    <li class="disable"><i class="fa fa-times"></i></li>
+                                </ul>
+                                <a href="#unlock" class="pricingTable-signup">Free</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 shadow-lg bg-white rounded pt-4">
+                            <div class="pricingTable blue">
+                                <h3 class="title">Standard</h3>
+                                <div class="price-value">$2.00
+                                    <span class="month">/week</span>
+                                </div>
+                                <ul class="pricing-content">
+                                    <li>Unlimited Unlocks</li>
+                                    <li>Ans within 5 sec</li>
+                                    <li>24/7 Service</li>
+                                    <li>Backups</li>
+                                    <li class="disable"><i class="fa fa-times"></i></li>
+                                </ul>
+                                <a href="https://discord.gg/eRsp5CcU5r" class="pricingTable-signup">Buy</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 shadow-lg bg-white rounded pt-4">
+                            <div class="pricingTable green">
+                                <h3 class="title">Premium</h3>
+                                <div class="price-value">$4.00
+                                    <span class="month">/month</span>
+                                </div>
+                                <ul class="pricing-content">
+                                    <li>Unlimited Unlocks</li>
+                                    <li>Ans within 5 sec</li>
+                                    <li>24/7 Service</li>
+                                    <li>Backups</li>
+                                    <li>More Services</li>
+                                </ul>
+                                <a href="https://discord.gg/eRsp5CcU5r" class="pricingTable-signup">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="py-5 mt-5" id="unlock">
+            <h2 align="center" id="nxsearch">Unlock Free Homework Help Answers with Just a One Click!</h2>
+            <br />
+            <br />
+            <div class="search-form">
+                <form id="search-form" action="/submit" method="post" enctype="multipart/form-data">
+                    <label for="message">Enter question link:</label>
+                    <input id="message" name="message" placeholder="Enter Question Link Here" type="url" required>
+                    <input type="hidden" name="csrf_token" value="9bf726c2c76529043dd9fcc604a194d66c3bab31670c">
+                    <label for="email">Enter Email:</label>
+                    <input id="email" name="email" placeholder="Enter Email here" type="email" required>
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAD_zuwz7g3TZZvL"
+                        data-callback="javascriptCallback"></div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <br>
+            <div class="ans-btn" style="display: flex; justify-content: center;">
+                <div class="response-container"
+                    style="background-color: #4CAF50; border-radius: 15px; padding: 10px; font-family: Arial, sans-serif; text-align: center;">
+                    <h2 style="padding-top: 3px;">Your Question's Answer will be shown below...</h2>
+                    <!-- Script response will be shown here -->
+                </div>
+            </div>
+            <div id="search-results">
+               
+                {% for response in responses %}
+                <!-- Check if the response is from Numerade -->
+                {% if "www.numerade.com" in response.question %}
+                <a href="{{ response.answer }}" target="_blank">
+                    <img src="{{ url_for('static', filename='./img/logo/Download2.png') }}" alt=""
+                        style="height: 100px;">
+                    <p>Click to Download</p>
+                </a>
+                {% endif %}
+
+                <!-- Check if the response is from Course Hero -->
+                {% if "www.coursehero.com" in response.question %}
+                <a href="#Purchase">
+                    <img src="{{ url_for('static', filename='./img/logo/Download3.png') }}" alt=""
+                        style="height: 100px;">
+                    <p class="coursehero">Purchase</p>
+                </a>
+                {% endif %}
+
+                <!-- Check if the response is from Chegg -->
+                {% if "www.chegg.com" in response.question %}
+                <a href="#Purchase">
+                    <img src="{{ url_for('static', filename='./img/logo/Download3.png') }}" alt=""
+                        style="height: 100px;">
+                    <p class="chegg">Purchase</p>
+                </a>
+                {% endif %}
+
+                <!-- Check if the response is from Scribd -->
+                {% if "scribd.com" in response.question %}
+                <a href="{{ response.answer }}" target="_blank">
+                    <img src="{{ url_for('static', filename='./img/logo/Download.png') }}" alt=""
+                        style="height: 100px;">
+                    <p>Click to Download</p>
+                </a>
+                {% endif %}
+
+                <!-- Check if the response is from Freepik -->
+                {% if "www.freepik.com" in response.question %}
+                {% if response.answer != 'Failed to fetch image from Freepik.' %}
+                <a href="{{ response.answer }}" target="_blank">
+                    <img src="{{ url_for('static', filename='./img/logo/Download1.png') }}" alt=""
+                        style="height: 100px;">
+                    <p>Click to Download</p>
+                </a>
+                {% else %}
+                <p>Failed to fetch image from Freepik.</p>
+                {% endif %}
+                {% endif %}
+
+                <!-- Check if the response is from academia -->
+
+                {% if "www.academia.edu" in response.question %}
+                <a href="{{ response.answer }}" target="_blank">
+                    <img src="{{ url_for('static', filename='./img/logo/Download.png') }}" alt=""
+                        style="height: 100px;">
+                    <p>Click to Download</p>
+                </a>
+                {% endif %}
+
+                <!-- SlideShare section -->
+                {% if "www.slideshare.net" in response.question %}
+                <div>
+                    <a href="{{ response.answer }}" target="_blank">
+                        <img src="{{ url_for('static', filename='./img/logo/Download.png') }}" alt="SlideShare"
+                            style="height: 100px;">
+                        <p>Click to Download</p>
+                    </a>
+                </div>
+                {% endif %}
+
+                <script>
+                    document.getElementById('search-results').scrollIntoView({ behavior: 'smooth' });
+                </script>
+                {% endfor %}
+                
+            </div>
+            <br>
+
+        </section>
+        <br>
+        <section>
+            <div class="topic-area section-padding40">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8">
+                            <div class="section-tittle text-center mb-55">
+                                <h2>Boost Your Grades Now!</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row c">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-topic text-center mb-30">
+                                <div class="topic-img">
+                                    <!-- <img src="assets/img/gallery/topic1.png" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/gallery/topic1.png') }}" alt="">
+                                    <div class="topic-content-box">
+                                        <div class="topic-content">
+                                            <h3><a href="#">Computer Science</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-topic text-center mb-30">
+                                <div class="topic-img">
+                                    <!-- <img src="assets/img/gallery/topic2.png" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/gallery/topic2.png') }}" alt="">
+                                    <div class="topic-content-box">
+                                        <div class="topic-content">
+                                            <h3><a href="#">Physics</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-topic text-center mb-30">
+                                <div class="topic-img">
+                                    <!-- <img src="assets/img/gallery/topic3.png" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/gallery/topic3.png') }}" alt="">
+                                    <div class="topic-content-box">
+                                        <div class="topic-content">
+                                            <h3><a href="#">Business</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-topic text-center mb-30">
+                                <div class="topic-img">
+                                    <!-- <img src="assets/img/gallery/topic4.png" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/gallery/topic4.png') }}" alt="">
+                                    <div class="topic-content-box">
+                                        <div class="topic-content">
+                                            <h3><a href="#">Chemistry</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-topic text-center mb-30">
+                                <div class="topic-img">
+                                    <!-- <img src="assets/img/gallery/topic5.png" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/gallery/topic5.png') }}" alt="">
+                                    <div class="topic-content-box">
+                                        <div class="topic-content">
+                                            <h3><a href="#">Engineering</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-topic text-center mb-30">
+                                <div class="topic-img">
+                                    <!-- <img src="assets/img/gallery/topic6.png" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/gallery/topic6.png') }}" alt="">
+                                    <div class="topic-content-box">
+                                        <div class="topic-content">
+                                            <h3><a href="#">MathsMatics</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-topic text-center mb-30">
+                                <div class="topic-img">
+                                    <!-- <img src="assets/img/gallery/topic7.png" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/gallery/topic7.png') }}" alt="">
+                                    <div class="topic-content-box">
+                                        <div class="topic-content">
+                                            <h3><a href="#">Advanced Physics</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-topic text-center mb-30">
+                                <div class="topic-img">
+                                    <!-- <img src="assets/img/gallery/topic8.png" alt=""> -->
+                                    <img src="{{ url_for('static', filename='./img/gallery/topic8.png') }}" alt="">
+                                    <div class="topic-content-box">
+                                        <div class="topic-content">
+                                            <h3><a href="#">Programing</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="dk-footer" class="dk-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-sm-6 col-12">
+                    <div class="dk-footer-box-info">
+                        <a href="#dk-footer" class="footer-logo">
+                            <!-- <img src="./assets/img/hero/logo.png" alt="footer_logo" class="img-fluid"> -->
+                            <img src="{{ url_for('static', filename='./img/hero/logo.png') }}" alt="" class="img-fluid">
+
+                        </a>
+                        <p class="footer-info-text">
+                            Empower Your Success with UWorkify, Your Academic Boostup Begins Here!
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100085420437946" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://x.com/Abdulwahabbut?t=6Kfgeq8zKv1r5sjjQuKGIg&s=09" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCYBcdxy3lW4-bDfq1eFLixA" target="_blank">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/wahabmunir/" target="_blank">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/aw_learning/" target="_blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-8 col-sm-6 col-12 mobre">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>Mirpur AJK</h3>
+                                    <p>MUST University</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <div class="contact-us contact-us-last" style="
+                            padding-left: 27px;
+                        ">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>00 000 0000</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                            <div class="footer-widget" style="
+                            padding-left: 50PX;
+                        ">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#dk-footer">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://discord.gg/eRsp5CcU5r">Discord</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Subscribe</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p>
+                                    Unlock Your Academic Potential with UWorkify, Where Success Begins its Journey!
+                                </p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row d-block">
+                    <div class="text-center">
+                        <span>Copyright © 2024, All Right Reserved UWorkify</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Up -->
+        <div id="back-top">
+            <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for continuous sliding
+        const slideshowImages = document.getElementById('slideshow');
+
+        setInterval(() => {
+            const firstSlide = slideshowImages.children[0];
+            slideshowImages.style.transition = 'transform 0.5s ease-in-out';
+            slideshowImages.style.transform = `translateX(-${firstSlide.offsetWidth}px)`;
+
+            setTimeout(() => {
+                slideshowImages.style.transition = 'transform 0.5s ease-in-out';
+                slideshowImages.style.transform = 'translateX(0)';
+                slideshowImages.appendChild(firstSlide);
+            }, 500);
+        }, 3000); // Change slide every 3 seconds (adjust as needed)
+    </script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbar = document.querySelector('.container-fluid');
+
+            function updateNavbarBackground() {
+                if (window.scrollY > 520) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+
+            // Initial call to set the correct background color
+            updateNavbarBackground();
+
+            // Listen for scroll events
+            window.addEventListener('scroll', updateNavbarBackground);
+        });
+    </script>
+
+    <!-- pricing scripts -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"
+        integrity="sha384-TpNbAgd18HIuO5UxMAfmHO5nm6zjqC5n1XXaoxQ+uaqK6IqjQppcfqrACXjZj+Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6pZl2p4uHQmG0M1N7Y9RvC84Z6R7N5Y5"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelectorAll('.navbar-nav a').forEach(function (element) {
+            element.addEventListener('click', function () {
+                // Close the mobile menu when a link is clicked
+                document.getElementById('mobileMenuButton').click();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
