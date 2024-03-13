@@ -16,30 +16,30 @@ import shutil
 app = Flask(__name__, static_url_path='/static')
 
 # Function to generate modified link for Scribd
-def generate_modified_link(original_link, title):
-    if "https://www.scribd.com/doc" in original_link:
-        modified_link = original_link.replace("https://www.scribd.com/doc", "https://ilide.info/docgeneratev2?fileurl=https%3A%2F%2Fscribd.vdownloaders.com%2Fpdownload")
-    elif "https://www.scribd.com/document" in original_link:
-        modified_link = original_link.replace("https://www.scribd.com/document", "https://ilide.info/docgeneratev2?fileurl=https%3A%2F%2Fscribd.vdownloaders.com%2Fpdownload")
-    elif "https://www.scribd.com/presentation" in original_link:
-        modified_link = original_link.replace("https://www.scribd.com/presentation", "https://ilide.info/docgeneratev2?fileurl=https%3A%2F%2Fscribd.vdownloaders.com%2Fpdownload")
+def generate_modified_link(original_link):
+    if "/doc/" in original_link:
+                modified_link = original_link.replace("/doc/", "/embeds/").rsplit('/', 1)[0] + "/content"
+    elif "/document/" in original_link:
+                modified_link = original_link.replace("/document/", "/embeds/").rsplit('/', 1)[0] + "/content"
+    elif "/presentation/" in original_link:
+                modified_link = original_link.replace("/presentation/", "/embeds/").rsplit('/', 1)[0] + "/content"
     else:
         modified_link = original_link
 
-    modified_link = modified_link.replace("%2F", "/", 4)  # Replace only the first 4 occurrences of "%2F" with "/"
-    modified_link += "&title=" + title.replace(" ", "+")
-    modified_link += "&utm_source=scrfree&utm_medium=queue&utm_campaign=dl"
+    # modified_link = modified_link.replace("%2F", "/", 4)  # Replace only the first 4 occurrences of "%2F" with "/"
+    # # modified_link += "&title=" + title.replace(" ", "+")
+    # modified_link += "&utm_source=scrfree&utm_medium=queue&utm_campaign=dl"
     return modified_link
 
-# Function to get title from Scribd link
-def get_title_from_link(link):
-    response = requests.get(link)
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.text, 'html.parser')
-        title_element = soup.find('h1', class_='_2qs3tf')
-        if title_element:
-            return title_element.text.strip()
-    return None
+# # Function to get title from Scribd link
+# def get_title_from_link(link):
+#     response = requests.get(link)
+#     if response.status_code == 200:
+#         soup = BeautifulSoup(response.text, 'html.parser')
+#         title_element = soup.find('h1', class_='_2qs3tf')
+#         if title_element:
+#             return title_element.text.strip()
+#     return None
 
 # Function to fetch video from Numerade
 def fetch_numeade_video(url):
@@ -281,9 +281,9 @@ def submit_message():
     # Handling Scribd links
     for url in scribd_links:
         
-        title = get_title_from_link(url)
-        if title:
-            modified_link = generate_modified_link(url, title)
+        
+        if True:
+            modified_link = generate_modified_link(url)
             responses.append({
                 'question': url,
                 'answer': modified_link
